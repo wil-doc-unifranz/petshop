@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda de Mascotas</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">PetStore</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#ropa">Ropa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#comida">Comida</a></li>
+        <li class="nav-item"><a class="nav-link" href="#limpieza">Limpieza</a></li>
+        <li class="nav-item"><a class="nav-link" href="#peluqueria">Peluquería</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <!-- Carrusel de Hero Section -->
+<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#heroCarousel" data-slide-to="1"></li>
+      <li data-target="#heroCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/hero1.webp" class="d-block w-100" alt="Imagen de ropa para mascotas">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ropa para Mascotas</h5>
+          <p>Encuentra la mejor ropa para mantener a tu mascota cómoda y con estilo.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/hero2.webp" class="d-block w-100" alt="Imagen de comida para mascotas">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Comida Saludable</h5>
+          <p>Nutrición balanceada para una vida sana y activa de tu mascota.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/hero3.webp" class="d-block w-100" alt="Imagen de productos de limpieza para mascotas">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Productos de Limpieza</h5>
+          <p>Mantén a tu mascota limpia y feliz con nuestros productos especializados.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+  
+
+  <!-- Productos Sections -->
+  <section id="ropa" class="container py-5">
+    <h2 class="text-center mb-5">Ropa</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/ropa1.jpg" class="card-img-top" alt="Ropa 1">
+          <div class="card-body">
+            <h5 class="card-title">Chaleco</h5>
+            <p class="card-text">Ropa cómoda para días fríos.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Agrega más productos de ropa según sea necesario -->
+    </div>
+  </section>
+
+  <section id="comida" class="container py-5 bg-light">
+    <h2 class="text-center mb-5">Comida</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/comida1.jpg" class="card-img-top" alt="Comida 1">
+          <div class="card-body">
+            <h5 class="card-title">Croquetas Premium</h5>
+            <p class="card-text">Nutrición balanceada para tu mascota.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Agrega más productos de comida -->
+    </div>
+  </section>
+
+  <section id="limpieza" class="container py-5">
+    <h2 class="text-center mb-5">Limpieza</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/limpieza1.jpg" class="card-img-top" alt="Producto de limpieza 1">
+          <div class="card-body">
+            <h5 class="card-title">Champú para Mascotas</h5>
+            <p class="card-text">Cuidado de la piel y pelaje de tu mascota.</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Agrega más productos de limpieza -->
+    </div>
+  </section>
+
+  <section id="peluqueria" class="container py-5 bg-light">
+    <h2 class="text-center mb-5">Peluquería</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/peluqueria1.jpg" class="card-img-top" alt="Servicio de peluquería 1">
+          <div class="card-body">
+            <h5 class="card-title">Corte de Pelo</h5>
+            <p class="card-text">Estilo y comodidad para tu mascota.</p>
+            <a href="#" class="btn btn-primary">Agendar</a>
+          </div>
+        </div>
+      </div>
+      <!-- Agrega más servicios de peluquería -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-white bg-dark py-4">
+    <p>&copy; 2023 PetStore. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
